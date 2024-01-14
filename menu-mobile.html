@@ -22,6 +22,10 @@
             --md: 16px;
             --lg: 18px;
         }
+
+        *{
+            box-sizing: border-box;
+        }
         
         body{
             margin: 0;
@@ -29,13 +33,16 @@
         }
 
         .mobile-menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             padding: 24px;
-            height: 100%;
+            height: 100vh;
+
         }
 
             .mobile-menu ul{
                 padding: 0;
-                margin: 24px 0 0;
                 list-style: none;
             }
 
@@ -53,6 +60,19 @@
                 font-weight: bold;
             }
 
+            .mobile-menu ul:last-child{
+                margin-top: 24px;
+            }
+
+            .mobile-menu div ul li{
+                margin-bottom: 32px;
+            }
+
+            .mobile-menu .bottom__element{
+                margin: 0;
+            }
+
+
             .mobile-menu .email{
                 font-size: var(--sm);
                 font-weight: normal;
@@ -63,60 +83,66 @@
                 font-size: var(--sm);
                 color: var(--hospital-green);
             }
+
+
+
     </style>
     </head>
     <body>
         <div class="mobile-menu">
-            <ul class="first-list">
-                <li>
-                    <a href="/">
-                        Categories
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        All
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        Clothes
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        Electronics
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        Furnitures
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        Toys
-                    </a>
-                </li>
-                <li>
-                    <a href="/">Others</a>
-                </li>
-            </ul>
+            <div>
+                <ul class="first-list">
+                    <li>
+                        <a href="/">
+                            Categories
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            All
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            Clothes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            Electronics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            Furnitures
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            Toys
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">Others</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/">My orders</a>
+                    </li>
+                    <li>
+                        <a href="/">My account</a>
+                    </li>
+                </ul>
+            </div>
+            
             <ul>
-                <li>
-                    <a href="/">My orders</a>
-                </li>
-                <li>
-                    <a href="/">My account</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
+                <li class="bottom__element">
                     <a href="/" class="email">
                         camilayoko@gmail.com
                     </a>
                 </li>
-                <li>
+                <li class="bottom__element">
                     <a href="/" class="sing-out">
                         Sing out
                     </a>
