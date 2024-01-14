@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="logos/favicon_bota_fora.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>My orders</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        
+        body{
+            margin: 0;
+            font-family: 'QuickSand', sans-serif;
+        }
+
+        .order-container{
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+            .order-container .info{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 80%;
+                height: 80px;
+                margin-top: 16px;
+                background: var(--text-input-field);
+                border-radius: 8px;
+
+            }
+                .order-container .info p{
+                    padding: 0 10px;
+                }
+
+                .order-container .info p:not(:last-child){
+                    color: var(--black);
+                    font-weight: bold;
+                    font-size: normal;
+                }
+
+                .order-container .info span{
+                    display: block;
+                    font-size: var(--sm);
+                    color: var(--very-light-pink);
+                    font-weight: normal;
+                }
+                
+
+            .order-container .shooping-cart{
+                display: grid;
+                grid-template-columns: auto 1fr auto auto;
+                width: 80%;
+                gap: 16px;
+                margin-top: 18px;
+                align-items: center;
+            }
+
+                .shooping-cart figure{
+                    margin: 0;
+                }
+
+                .shooping-cart figure img{
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 20%;
+                    object-fit: cover;
+                }
+                
+                .order-container .shooping-cart p:not(:last-child){
+                    color: var(--very-light-pink);
+                    font-size: var(--sm);
+                }
+
+                .order-container .shooping-cart p:last-child{
+                    font-weight: bold;
+                    font-size: var(--md);
+                    
+                }
+
+
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <div class="info">
+            <p>
+                04.25.2021
+                <span>6 articles</span>
+            </p>
+            <p>
+                $560.00
+            </p>
+        </div>
+        <div class="shooping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/2156327/pexels-photo-2156327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"icons/guitars.jpg" alt="guitar">
+            </figure>
+            <p>Guitar</p>
+            <p>$150.00</p>
+        </div>
+        <div class="shooping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/2156327/pexels-photo-2156327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"icons/guitars.jpg" alt="guitar">
+            </figure>
+            <p>Guitar</p>
+            <p>$150.00</p>
+        </div>
+        <div class="shooping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/2156327/pexels-photo-2156327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"icons/guitars.jpg" alt="guitar">
+            </figure>
+            <p>Guitar</p>
+            <p>$150.00</p>
+        </div>
+        <div class="shooping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/2156327/pexels-photo-2156327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"icons/guitars.jpg" alt="guitar">
+            </figure>
+            <p>Guitar</p>
+            <p>$150.00</p>
+        </div>
+        <div class="shooping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/2156327/pexels-photo-2156327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"icons/guitars.jpg" alt="guitar">
+            </figure>
+            <p>Guitar</p>
+            <p>$150.00</p>
+        </div>
+        <div class="shooping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/2156327/pexels-photo-2156327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"icons/guitars.jpg" alt="guitar">
+            </figure>
+            <p>Guitar</p>
+            <p>$150.00</p>
+        </div>
+        <div class="shooping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/2156327/pexels-photo-2156327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"icons/guitars.jpg" alt="guitar">
+            </figure>
+            <p>Guitar</p>
+            <p>$150.00</p>
+        </div>
+        
+    </div>
+</body>
+</html>
