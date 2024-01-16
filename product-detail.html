@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="logos/favicon_bota_fora.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Product Detail</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            font-family: 'QuickSand', sans-serif;
+        }
+
+        .product{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            align-items: center;
+        }
+            .product .img-container{
+                width: 100%;
+                position: relative;
+            }
+
+            .product .img-container img{
+                width: 100%;
+                height: 340px;
+                border-bottom-left-radius: 10%;
+                object-fit: cover;
+            }
+
+            .product .cross{
+                position: absolute;
+                background: var(--white);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                top: 12px;
+                left: 12px;
+            }
+
+            .product .dots{
+                display: flex;
+                flex-flow: row nowrap;
+                width: 32px;
+                justify-content: space-between;
+                margin: 8px 0 0 0;
+            }
+
+                .product .dot{
+
+                    background: var(--very-light-pink);
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+
+                }
+
+            .product .text-container{
+                padding: 0 32px;
+            }
+
+                .text-container p{
+                    text-align: left;
+                    color: var(--very-light-pink);
+                }
+
+                .text-container p:first-child{
+                    margin: 10px 0 0 0;
+                    font-weight: bold;
+                    color: var(--black);
+                    font-size: var(--md);
+                }
+
+                .text-container p:nth-child(2){
+                    margin: 8px 0 24px 0;
+                }
+
+                .text-container p:nth-child(3){
+                    margin-bottom: 32px;
+                }
+            
+            .product button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 311px;
+                
+            }
+
+                .product .primary-btn{
+
+                    background-color: var(--hospital-green);
+                    border: none;
+                    border-radius: 8px;
+                    color: var(--white);
+                    cursor: pointer;
+                    height: 50px;
+                    font-size: var(--md);
+                    font-weight: bold;
+                }
+
+        @media (min-width: 640px){
+            .product{
+                width: 360px;
+                position: absolute;
+                right: 0;
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="product">
+        <div class="img-container">
+            <div class="cross">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+            <img src="icons/guitars.jpg" alt="product-guitar">
+        </div>
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="text-container">
+            <p>$  120.00</p>
+            <p>Guitarra electrica</p>
+            <p>¡Amantes de la música y apasionados de las seis cuerdas, les damos la bienvenida a nuestra venta de garaje única! 
+                Este sábado, despejen espacio en sus agendas porque hemos decidido hacer espacio en nuestro hogar para algo nuevo, 
+                y eso significa que una increíble guitarra eléctrica está buscando un nuevo dueño.
+            </p>
+        </div>
+        <button class="primary-btn">
+            <img src="icons/bt_add_to_cart.svg" alt="addtocart">
+            Add to cart
+        </button>
+    </aside>
+</body>
+</html>
